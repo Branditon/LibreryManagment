@@ -1,2 +1,15 @@
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Model/BookModel.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Model/LoanModel.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Model/PermissionModel.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Model/RolModel.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Model/UserModel.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Persistence/BookModelJpaController.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Persistence/LoanModelJpaController.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Persistence/PermissionModelJpaController.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Persistence/RolModelJpaController.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Persistence/UserModelJpaController.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Persistence/exceptions/IllegalOrphanException.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Persistence/exceptions/NonexistentEntityException.java
+/Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/Persistence/exceptions/PreexistingEntityException.java
 /Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/com/mycompany/librarymanagement/JAXRSConfiguration.java
 /Users/brandonescudero/NetBeansProjects/LibraryManagement/src/main/java/com/mycompany/librarymanagement/resources/JavaEE8Resource.java

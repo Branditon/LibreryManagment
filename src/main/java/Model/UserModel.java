@@ -5,6 +5,7 @@
 package Model;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +13,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -44,16 +46,21 @@ public class UserModel implements Serializable {
     @ManyToOne
     @JoinColumn(name = "rol_id")
     private RolModel rol;
+    
+    @OneToMany(mappedBy = "user")
+    private List<LoanModel> loan;
 
     public UserModel() {
     }
 
-    public UserModel(Long id, String name, String lastName, String email, String password) {
+    public UserModel(Long id, String name, String lastName, String email, String password, RolModel rol, List<LoanModel> loan) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.rol = rol;
+        this.loan = loan;
     }
     
     public Long getId() {
@@ -94,6 +101,22 @@ public class UserModel implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public RolModel getRol() {
+        return rol;
+    }
+
+    public void setRol(RolModel rol) {
+        this.rol = rol;
+    }
+
+    public List<LoanModel> getLoan() {
+        return loan;
+    }
+
+    public void setLoan(List<LoanModel> loan) {
+        this.loan = loan;
     }
     
     @Override
